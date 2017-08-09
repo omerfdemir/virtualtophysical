@@ -42,4 +42,4 @@ Run trysyscall script by typing `./trysyscall.sh pid virtual_address` Where pid 
 ![trysyscall](https://github.com/omerfdemir/virtualtophysical/blob/master/images/trysyscall.png)
 
 
-By doing that we can reach physical value of a process within another process with process id and virtuall address of that process.
+By doing that we can reach physical value of a process within another process with process id and virtual address of that process.
