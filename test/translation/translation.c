@@ -5,7 +5,7 @@
 #include <sys/syscall.h>
 #include <unistd.h>
 #include <stdlib.h>
- 
+
 
 
 int main(int pid)
@@ -15,7 +15,7 @@ int main(int pid)
     int N = 4096;
 
     int i = 0;
-   
+
     char str[50];
     unsigned long long virtual_address = 0;
 
@@ -31,20 +31,20 @@ int main(int pid)
 
     }
 
- 
+
 
     virtual_address = (unsigned long long)&a[1024];
     printf("virtual address = 0x%llx\n" ,virtual_address);
    unsigned long long physicaladdress = syscall(332,0,virtual_address);
 	printf("physical address = 0x%llx\n",physicaladdress);
-	
-	scanf("%s",str);											
 
-    
+	scanf("%s",str);
+
+
 
     /*physical_address = syscall_translate_virtual_to_physical_address(virtual_address);
 
     printf("virtual address = %llu  physical address = %llu", virtual_address, physical_address );*/
-return virtual_address;
+return 0;
 
 }
