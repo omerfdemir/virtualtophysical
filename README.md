@@ -30,9 +30,9 @@ After compiling kernel reboot the machine with `reboot` command.
 Check your new kernel version with `uname -r` command.
 
 Run allocate_memory script with `./allocate_memory.sh` command. It allocates memory and return virtual address and physical address.
-![menuconfig4](https://github.com/omerfdemir/virtualtophysical/blob/master/images/testscript.png)
+![allocate_memory_script](https://github.com/omerfdemir/virtualtophysical/blob/master/images/allocate_memory_script.png)
 
 To check physical address of other process we need to know process id and virtual address of that process.
 
 Check the id of testscript with typing `ps -aux | grep translation.o`
-![menuconfig4](https://github.com/omerfdemir/virtualtophysical/blob/master/images/pid.png)
+![pid](https://github.com/omerfdemir/virtualtophysical/blob/master/images/pid.png)
