@@ -14,7 +14,7 @@ or use `wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.9.40.tar.xz` a
 
 ### Run copy_files.sh to copy necessary kernel config files
 `./copy_files.sh`
-### Run compilekernel.sh with root privilege to start compiling kernel
+### Run compile_kernel.sh with root privilege to start compiling kernel
 `sudo ./compile_kernel.sh`
 In order to compile linux kernel config file must created. We are creating config file with default values.
 Follow the following steps.
@@ -28,7 +28,7 @@ It can take 30+ minutes based on computer specifications.
 After compiling kernel reboot the machine with `reboot` command.
 
 Check your new kernel version with `uname -r` command.
-
+##Testing
 Run allocate_memory script by typing `./allocate_memory.sh` command. It allocates memory and return virtual address and physical address.
 
 ![allocate_memory_script](https://github.com/omerfdemir/virtualtophysical/blob/master/images/allocate_memory_script.png)
