@@ -15,7 +15,7 @@ or use `wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.9.40.tar.xz` a
 ### Run copy_files.sh to copy necessary kernel config files
 `./copy_files.sh`
 ### Run compilekernel.sh with root privilege to start compiling kernel
-`sudo ./compile_kernel.s
+`sudo ./compile_kernel.sh`
 In order to compile linux kernel config file must created. We are creating config file with default values.
 Follow the following steps.
 ![menuconfig1](https://github.com/omerfdemir/virtualtophysical/blob/master/images/1.png)
