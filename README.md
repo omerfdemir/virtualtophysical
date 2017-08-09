@@ -10,7 +10,7 @@ or use `wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.9.40.tar.xz` a
 `tar -xvf linux-4.9.40.tar.xz`
 
 ## Running scripts
-### Copy this(virtualtophysical) folder to /linux-4.9.40 directory
+### Copy this(virtualtophysical) folder to same directory which linux-4.9.40 is in.
 
 ### Run copy_files.sh to copy necessary kernel config files
 `./copy_files.sh`
@@ -23,4 +23,16 @@ Follow the following steps.
 ![menuconfig3](https://github.com/omerfdemir/virtualtophysical/blob/master/images/3.png)
 ![menuconfig4](https://github.com/omerfdemir/virtualtophysical/blob/master/images/4.png)
 After doing that compiling script will continue.
-It can take 30+ minutes based on computer specifications
+It can take 30+ minutes based on computer specifications.
+
+After compiling kernel reboot the machine with `reboot` command.
+
+Check your new kernel version with `uname -r` command.
+
+Run test script with `./test.sh` command. It allocates memory and return virtual address and physical address.
+![menuconfig4](https://github.com/omerfdemir/virtualtophysical/blob/master/images/testscript.png)
+
+To check physical address of other process we need to know process id and virtual address of that process.
+
+Check the id of testscript with typing `ps -aux | grep test.sh`
+![menuconfig4](https://github.com/omerfdemir/virtualtophysical/blob/master/images/pid.png)
