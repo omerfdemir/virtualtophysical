@@ -29,7 +29,7 @@ int main(int argc, char ** argv)
 
 
 
-    printf("virtual address = 0x%llx\n" ,virtual_address);
+    printf("virtual address = 0x%llx\n" ,(unsigned long long) virtual_address);
    unsigned long long physicaladdress = syscall(332,pid,virtual_address);
 	printf("physical address = 0x%llx\n",physicaladdress);
 	
