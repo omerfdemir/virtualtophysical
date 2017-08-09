@@ -14,9 +14,9 @@ or use `wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.9.40.tar.xz` a
 
 ### Run copy_files.sh to copy necessary kernel config files
 `./copy_files.sh`
-### Run compile.kernel.sh to start compiling kernel
+### Run compilekernel.sh to start compiling kernel
 It can take 30+ minutes based on computer specifications
-`sudo ./compile_kernel.sh`
+`sudo ./compile_kernel.s
 
 
 
