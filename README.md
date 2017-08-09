@@ -29,10 +29,10 @@ After compiling kernel reboot the machine with `reboot` command.
 
 Check your new kernel version with `uname -r` command.
 
-Run test script with `./test.sh` command. It allocates memory and return virtual address and physical address.
+Run allocate_memory script with `./allocate_memory.sh` command. It allocates memory and return virtual address and physical address.
 ![menuconfig4](https://github.com/omerfdemir/virtualtophysical/blob/master/images/testscript.png)
 
 To check physical address of other process we need to know process id and virtual address of that process.
 
-Check the id of testscript with typing `ps -aux | grep test.sh`
+Check the id of testscript with typing `ps -aux | grep translation.o`
 ![menuconfig4](https://github.com/omerfdemir/virtualtophysical/blob/master/images/pid.png)
