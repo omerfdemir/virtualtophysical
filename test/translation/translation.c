@@ -45,6 +45,6 @@ int main(int pid)
     /*physical_address = syscall_translate_virtual_to_physical_address(virtual_address);
 
     printf("virtual address = %llu  physical address = %llu", virtual_address, physical_address );*/
-return 0;
+return virtual_address;
 
 }
