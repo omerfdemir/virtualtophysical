@@ -1,5 +1,5 @@
 
-# Kernel Module to translate given virtual address with process id to physicall address
+# Kernel Module to translate given virtual address with process id to physical address
 
 # Instructions
 ## Downloading and extracting Kernel
